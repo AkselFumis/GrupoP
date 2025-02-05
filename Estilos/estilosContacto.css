@@ -3,17 +3,16 @@
     height: 6vh;
     margin: 70px 30% 30px 30%;
     padding: 10px;
-    background: #00BFFF;
-    box-shadow: inset 14px 14px 28px #00a2d9,
-        inset -14px -14px 28px #00dcff;
-    color: white;
+    background: #00BFFF;color: white;
     text-align: center;
     font-size: 2.5rem;
+    box-shadow: inset 14px 14px 28px #00a2d9,
+    inset -14px -14px 28px #00dcff;
     border-radius: 125px 0px 125px 125px;
     -webkit-border-radius: 125px 0px 125px 125px;
     -moz-border-radius: 125px 0px 125px 125px;
     box-shadow: 10px 10px 20px #6e6e6e,
-        -10px -10px 20px #ffffff;
+    -10px -10px 20px #ffffff;
 }
 
 .heartbeat {
@@ -162,7 +161,8 @@ main {
 }
 
 .card .content svg polyline,
-.card .content svg rect {
+.card .content svg rect,
+.card .content svg path {
     transition: all 0.8s ease;
 }
 
@@ -171,6 +171,26 @@ main {
     background: linear-gradient(45deg, #e74949 0%, #e20c23 100%);
     background: -webkit-linear-gradient(45deg, #e74949 0%, #e20c23 100%);
     background: -moz-linear-gradient(45deg, #e74949 0%, #e20c23 100%);
+    box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
+    -webkit-box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
+    -moz-box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
+}
+
+.cards .pink {
+    background: rgb(254, 218, 119);
+    background: linear-gradient(18deg, rgba(254, 218, 119, 1) 11%, rgba(129, 52, 175, 1) 28%, rgba(221, 42, 123, 1) 77%);
+    background: -webkit-linear-gradient(18deg, rgba(254, 218, 119, 1) 11%, rgba(129, 52, 175, 1) 28%, rgba(221, 42, 123, 1) 77%);
+    background: -moz-linear-gradient(18deg, rgba(254, 218, 119, 1) 11%, rgba(129, 52, 175, 1) 28%, rgba(221, 42, 123, 1) 77%);
+    box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
+    -webkit-box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
+    -moz-box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
+}
+
+.cards .green {
+    background: rgb(48, 193, 118);
+    background: linear-gradient(50deg, rgba(48, 193, 118, 1) 17%, rgba(15, 236, 22, 1) 58%);
+    background: -webkit-linear-gradient(50deg, rgba(48, 193, 118, 1) 17%, rgba(15, 236, 22, 1) 58%);
+    background: -moz-linear-gradient(50deg, rgba(48, 193, 118, 1) 17%, rgba(15, 236, 22, 1) 58%);
     box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
     -webkit-box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
     -moz-box-shadow: 1px 0px 36px 4px rgba(214, 25, 25, 0.61);
@@ -190,6 +210,69 @@ main {
 }
 
 .card .gmail:hover svg polyline,
-.card .gmail:hover svg rect {
+.card .gmail:hover svg rect,
+.card .gmail:hover svg path {
     stroke: white;
+}
+
+.card .instagram {
+    color: #b83497;
+}
+
+.card .instagram:hover {
+    color: white;
+}
+
+.card .instagram svg polyline,
+.card .instagram svg rect,
+.card .instagram svg path {
+    stroke: #b83497;
+}
+
+.card .instagram:hover svg polyline,
+.card .instagram:hover svg rect,
+.card .instagram:hover svg path {
+    stroke: white;
+}
+
+.card .whatsapp {
+    color: #14cc2d;
+}
+
+.card .whatsapp:hover {
+    color: white;
+}
+
+.card .whatsapp svg,
+.card .whatsapp svg path {
+    fill: #14cc2d;
+}
+
+.card .whatsapp:hover svg,
+.card .whatsapp:hover svg path {
+    fill: white;
+}
+
+@media screen and (max-width: 768px){
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 10% ;
+        font-size: 1.5rem;
+    }
+    .cards{
+        width: 100%;
+    }
+
+    .card{
+        width: 95%;
+    }
+    .card h2{
+        font-size:2.5rem;
+    }
+    .card p {
+        font-size: 1.2rem;
+    }
 }

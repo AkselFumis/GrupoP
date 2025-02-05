@@ -15,7 +15,10 @@
             <div class="logo">
                 <img src="ImagenP1.png" alt="">
             </div>
-            <ul>
+            <button class="hamburger">
+                ☰
+            </button>
+            <ul class="nav-links">
                 <li><a href="Index.html">Inicio</a></li>
                 <li>
                     <button class="dropdown-btn">Nuestras Marcas</button>
@@ -34,8 +37,8 @@
     <main>
         <div class="left">
             <h1>Grupo Peña, Cereales Saenz y Especias Saenz</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s,</p>
+            <p>Llegamos a toda partes del país, nuestros clientes desde Misiones, Mendoza,
+                Entre Rios, Córdoba y todo Santa Fe, confían en nosotros</p>
             <button class="btn-12"><span>Sobre Nosotros</span></button>
 
         </div>
@@ -43,20 +46,22 @@
     </main>
 
     <section class="muestras" id="muestras">
-        
+
         <div class="titulo">
-            <h3 class="bounce-in-top fade-out" id="titulo">Pulsa en las tarjetas <br> ↓</h3><h2 class="wobble-hor-bottom">Muestras de Nuestros Productos</h2><h3 style="visibility: hidden;">Pulsa en las tarjetas <br> ↓</h3>
+            <h3 class="bounce-in-top fade-out" id="titulo">Pulsa en las tarjetas <br> ↓</h3>
+            <h2 class="wobble-hor-bottom">Muestras de Nuestros Productos</h2>
+            <h3 class="eliminar" style="visibility: hidden;">Pulsa en las tarjetas <br> ↓</h3>
         </div>
         <div class="cards">
-            <div class="card" id="card1" onclick="showArrows('card1')" style="background-image: url('ImagenP1.png');">
+            <div class="card" id="card1" onclick="showArrows('card1')" style="background-image: url('../Imagenes/ImagenP1.jpg');">
                 <a class="prev" onclick="changeSlide(-1, 'card1')">&#10094;</a>
                 <a class="next" onclick="changeSlide(1, 'card1')">&#10095;</a>
             </div>
-            <div class="card" id="card2" onclick="showArrows('card2')" style="background-image: url('ImagenP1.png');">
+            <div class="card" id="card2" onclick="showArrows('card2')" style="background-image: url('../Imagenes/ImagenP2.jpg');">
                 <a class="prev" onclick="changeSlide(-1, 'card2')">&#10094;</a>
                 <a class="next" onclick="changeSlide(1, 'card2')">&#10095;</a>
             </div>
-            <div class="card" id="card3" onclick="showArrows('card3')" style="background-image: url('ImagenP1.png');">
+            <div class="card" id="card3" onclick="showArrows('card3')" style="background-image: url('../Imagenes/ImagenP3.jpg');">
                 <a class="prev" onclick="changeSlide(-1, 'card3')">&#10094;</a>
                 <a class="next" onclick="changeSlide(1, 'card3')">&#10095;</a>
             </div>

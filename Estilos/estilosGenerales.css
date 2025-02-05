@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -16,6 +20,7 @@ header {
     box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.85);
     -webkit-box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.85);
     -moz-box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.85);
+
 }
 
 .logo {
@@ -162,4 +167,101 @@ nav ul li .dropdown-menu li a:hover {
     box-shadow: inset 14px 14px 28px #00a2d9,
         inset -14px -14px 28px #00dcff;
     color: white;
+}
+
+.separador {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #00BFFF;
+}
+
+/* Esconder las opciones del menú en dispositivos móviles */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 60%;
+    height: 100%;
+}
+
+/* Estilos para cuando el menú hamburguesa está activo */
+.nav-links.active {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Ajustes generales para el menú desplegable */
+    nav ul li .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.85);
+        z-index: 1000;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* Ajusta el ancho para que se ajuste al contenedor */
+        text-align: left;
+        border-radius: 0 0 5px 5px;
+        /* Añadir bordes redondeados a la parte inferior */
+    }
+
+    nav ul li .dropdown-menu li a {
+        padding: 12px 16px;
+        color: #00BFFF;
+        background-color: white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        box-shadow: none;
+        /* Eliminar sombras en los elementos del menú */
+    }
+
+    nav ul li .dropdown-menu li a:hover {
+        background: #00BFFF;
+        color: white;
+    }
+
+    .dropdown-btn:focus+.dropdown-menu,
+    .dropdown-btn:hover+.dropdown-menu {
+        display: block;
+        /* Mostrar el menú cuando el botón tenga el foco o se pase el ratón por encima */
+    }
+
 }

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const images = [
-        'url("ImagenP1.png")',
-        'url("ImagenP2.png")',
-        'url("ImagenP3.png")'
+        'url("../Imagenes/ImagenP1.jpg")',
+        'url("../Imagenes/ImagenP2.jpg")',
+        'url("../Imagenes/ImagenP3.jpg")'
     ];
 
     let currentIndex = 0;
@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 var slides = {
-    card1: ['ImagenP2.png', 'ImagenP1.png', 'ImagenP3.png'],
-    card2: ['ImagenP1.png', 'ImagenP2.png', 'ImagenP3.png'],
-    card3: ['ImagenP1.png', 'ImagenP2.png', 'ImagenP3.png']
+    card1: ['../Imagenes/cpa.jpg', '../Imagenes/cpb.jpg', '../Imagenes/cpc.jpg'],
+    card2: ['../Imagenes/csa.jpg', '../Imagenes/csb.jpg', '../Imagenes/csc.jpg'],
+    card3: ['../Imagenes/esa.jpg', '../Imagenes/esb.jpg', '../Imagenes/esc.jpg']
 };
 
 var currentIndices = {
@@ -48,6 +48,7 @@ function changeSlide(direction, cardId) {
 
     currentIndices[cardId] = (currentIndices[cardId] + direction + totalImages) % totalImages;
     card.style.backgroundImage = 'url(' + images[currentIndices[cardId]] + ')';
+
 }
 
 document.addEventListener('click', function (event) {
