@@ -110,7 +110,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 100%;
+    height: auto;
     flex-wrap: wrap;
 }
 
@@ -127,7 +127,7 @@ main {
 .card .content {
     display: flex;
     justify-content: space-evenly;
-    height: 20vh;
+    height: auto;
     margin: 5px;
     background-color: white;
     transition: all 0.8s ease;
@@ -255,11 +255,6 @@ main {
 
 @media screen and (max-width: 768px){
     .titulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: 10% ;
         font-size: 1.5rem;
     }
     .cards{
@@ -274,5 +269,15 @@ main {
     }
     .card p {
         font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 10% ;
+        font-size: 1.5rem;
     }
 }
